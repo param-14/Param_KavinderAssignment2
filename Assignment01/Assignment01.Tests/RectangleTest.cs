@@ -22,9 +22,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedLengthRectangle = 1;
-            //Assert.That(expectedLengthRectangle == lengthRectangle, "Consition is not match", new[] { expectedLengthRectangle, lengthRectangle });
-            Assert.That(expectedLengthRectangle == lengthRectangle, "Rectagle is not matched", new[] { expectedLengthRectangle, lengthRectangle });
-            //Assert.AreEqual(expectedLengthRectangle, lengthRectangle);
+            Assert.That(expectedLengthRectangle, Is.EqualTo(lengthRectangle));
         }
         [Test]
         public void test_Using_Default_Value_Get_Width_of_Rectagle()
@@ -38,7 +36,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedWidthRectangle = 1;
-            Assert.AreEqual(expectedWidthRectangle, widthRectangle);
+            Assert.That(expectedWidthRectangle, Is.EqualTo(widthRectangle));
         }
         [Test]
         public void test_Using_Default_Value_Get_Area_of_Rectagle()
@@ -52,7 +50,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 1;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Default_Value_Get_Perimeter_of_Rectagle()
@@ -66,7 +64,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 4;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
 
 
@@ -84,7 +82,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedLengthRectangle = 10;
-            Assert.AreEqual(expectedLengthRectangle, lengthGetRectangle);
+            Assert.That(expectedLengthRectangle, Is.EqualTo(lengthGetRectangle));
         }
         [Test]
         public void test_Using_Setting_Length_Get_Area_of_Rectagle()
@@ -102,7 +100,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 10;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Length_Get_Perimeter_of_Rectagle()
@@ -119,7 +117,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 22;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Width_Get_Width_of_Rectagle()
@@ -136,7 +134,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedWidthRectangle = 10;
-            Assert.AreEqual(expectedWidthRectangle, widthGetRectangle);
+            Assert.That(expectedWidthRectangle, Is.EqualTo(widthGetRectangle));
         }
         [Test]
         public void test_Using_Setting_Width_Get_Area_of_Rectagle()
@@ -153,7 +151,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 10;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Width_Get_Perimeter_of_Rectagle()
@@ -170,7 +168,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 22;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Length_Width_Get_Area_of_Rectagle()
@@ -188,7 +186,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 100;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Length_Width_Get_Perimeter_of_Rectagle()
@@ -206,7 +204,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 40;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Max_Length_Width_Get_Area_of_Rectagle()
@@ -224,7 +222,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 20250000;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Max_Length_Width_Get_Perimeter_of_Rectagle()
@@ -242,7 +240,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 18000;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Zero_Length_Width_Get_Area_of_Rectagle()
@@ -260,7 +258,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedAreaOfRectangle = 0;
-            Assert.AreEqual(expectedAreaOfRectangle, areaOfRectangle);
+            Assert.That(expectedAreaOfRectangle, Is.EqualTo(areaOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Zero_Length_Width_Get_Perimeter_of_Rectagle()
@@ -278,7 +276,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedPerimeterOfRectangle = 0;
-            Assert.AreEqual(expectedPerimeterOfRectangle, perimeterOfRectangle);
+            Assert.That(expectedPerimeterOfRectangle, Is.EqualTo(perimeterOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Zero_Length_Get_Length_of_Rectagle()
@@ -296,7 +294,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedlengthOfRectangle = 0;
-            Assert.AreEqual(expectedlengthOfRectangle, lengthOfRectangle);
+            Assert.That(expectedlengthOfRectangle, Is.EqualTo(lengthOfRectangle));
         }
         [Test]
         public void test_Using_Setting_Zero_Width_Get_Width_of_Rectagle()
@@ -313,7 +311,7 @@ namespace Assignment01.Tests
 
             //Assert
             int expectedWidthOfRectangle = 0;
-            Assert.AreEqual(expectedWidthOfRectangle, WidthOfRectangle);
+            Assert.That(expectedWidthOfRectangle, Is.EqualTo(WidthOfRectangle));
         }
     }
 }
